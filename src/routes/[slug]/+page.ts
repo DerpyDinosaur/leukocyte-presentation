@@ -1,20 +1,27 @@
 import { error, redirect } from "@sveltejs/kit";
+import type { Component } from "svelte";
+import type { PageLoad } from "./$types";
 
-const modules = import.meta.glob("#lib/slides/*.svelte");
+type SlideModule = { default: Component };
+
+const modules = import.meta.glob<SlideModule>("#lib/slides/*.svelte");
 const presentation_end = "/src/lib/slides/end.svelte";
 
-export async function load({ params }) {
+const SLIDE_COUNT: number = Object.keys(modules).length;
+
+export const load: PageLoad = async ({ params }) => {
+  let slide_number = Number(params.slug);
   let component_path = `/src/lib/slides/${params.slug}.svelte`;
 
   if (params.slug === "3") {
     component_path = `/src/lib/slides/1.svelte`;
   }
 
-  let match = modules[component_path];
+  let match: (() => Promise<SlideModule>) | undefined = modules[component_path];
 
-  if (Number(params.slug) > (Object.keys(modules).length + 1)) {
-    redirect(307, "/1")
-  } else if (Number(params.slug) > Object.keys(modules).length) {
+  if (slide_number > SLIDE_COUNT) {
+    redirect(307, "/0");
+  } else if (slide_number > SLIDE_COUNT - 1) {
     match = modules[presentation_end];
   }
 
@@ -28,4 +35,4 @@ export async function load({ params }) {
     dynamicComponent: component.default,
     slug: params.slug,
   };
-}
+};

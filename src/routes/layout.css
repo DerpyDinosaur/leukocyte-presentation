@@ -36,11 +36,19 @@
 :root {
     --color-primary: #39e47e;
     --color-purple: oklch(67.3% 0.182 276.935);
+
+    --cursor-hand: url('/hand.svg') 18 2, auto;
 }
 
 @theme {
     --color-primary: var(--color-primary);
     --color-purple: var(--color-purple);
+}
+
+html,
+body,
+*:not(input):not(textarea):not(select) {
+    cursor: var(--cursor-hand);
 }
 
 h1,
@@ -76,6 +84,5 @@ ol {
 }
 
 a {
-    text-decoration: underline;
     color: oklch(67.3% 0.182 276.935);
 }

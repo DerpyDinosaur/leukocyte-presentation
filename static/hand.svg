@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 32 32">
+  <defs>
+    <g id="hand">
+      <!-- index finger -->
+      <rect x="9.5" y="2.5" width="6" height="17" rx="3"/>
+      <!-- palm / fist -->
+      <rect x="8.5" y="14" width="19.5" height="15" rx="6"/>
+      <!-- middle, ring, pinky knuckles -->
+      <rect x="15" y="12" width="5.5" height="10" rx="2.75"/>
+      <rect x="19.5" y="13" width="5.5" height="10" rx="2.75"/>
+      <rect x="24" y="15" width="4.5" height="9" rx="2.25"/>
+      <!-- thumb -->
+      <rect x="4" y="16.5" width="9" height="6.5" rx="3.25" transform="rotate(-25 8.5 20)"/>
+    </g>
+  </defs>
+
+  <!-- outline: same shapes drawn fat and black -->
+  <use href="#hand" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- fill: same shapes on top, white -->
+  <use href="#hand" fill="#39e47e"/>
+
+  <!-- finger separation lines -->
+  <g stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" fill="none">
+    <path d="M20 15.5 V20"/>
+    <path d="M24.4 16.5 V21"/>
+    <path d="M12.5 19.5 V21.5" opacity="0"/>
+  </g>
+</svg>

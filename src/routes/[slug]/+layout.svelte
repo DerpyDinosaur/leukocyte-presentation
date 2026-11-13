@@ -7,13 +7,13 @@
     let { children, params }: LayoutProps = $props();
 
     function change_slide(e: any) {
-        let slide = Number(params.slug);
+        let slide = Number(params.slug) || 0;
         if (e.key === "ArrowRight") {
             slide++;
         }
 
         if (e.key === "ArrowLeft") {
-            if (slide === 1) return;
+            if (slide === 0) return;
             slide--;
         }
         goto(`/${slide}`);

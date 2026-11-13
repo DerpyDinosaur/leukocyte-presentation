@@ -64,7 +64,7 @@
             }),
         };
 
-        let cell;
+        let cell: any;
         new OBJLoader().load(
             asset("leukocyte.obj"),
             (obj) => {

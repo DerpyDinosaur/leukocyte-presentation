@@ -73,7 +73,7 @@
     </div>
   </div>
   <div class="w-full flex justify-between items-center">
-    <a href="https://npmx.dev/package/axios" class="flex flex-col justify-center items-center text-purple no-underline!">
+    <a target="_blank" href="https://npmx.dev/package-stats/axios/v/1.21.1?end=2026-04-10&start=2026-03-25&granularity=daily#trends" class="flex flex-col justify-center items-center text-purple no-underline!">
         <p class="text-6xl tracking-wide">100M+</p>
         <p class="text-2xl opacity-50">Weekly Downloads</p>
     </a>
