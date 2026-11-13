@@ -4,7 +4,7 @@
     "Know Your Pathogens",
     "Leukocyte",
     "What can you do on Monday!",
-    "Recovery + Questions"
+    "Questions"
   ]
 </script>
 

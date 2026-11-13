@@ -40,5 +40,5 @@
     {/each}
   </div>
 
-  <a target="_blank" href="https://2025.stateofjs.com/en-US/other-tools/#runtimes" class="w-full text-right font-bold">Ref: Runtimes</a>
+  <a target="_blank" href="https://survey.stackoverflow.co/2025/technology#most-popular-technologies-platform-platform-prof" class="w-full text-right font-bold">Ref: Runtimes</a>
 </section>

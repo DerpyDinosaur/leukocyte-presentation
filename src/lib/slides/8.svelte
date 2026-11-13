@@ -35,9 +35,9 @@
 <section class="p-8">
   <h2 class="text-center font-bold leading-tight">Know your pathogens!</h2>
 
-  <div class="mt-30 w-full flex flex-col gap-20 justify-center items-center">
+  <div class="mt-15 w-full flex flex-col gap-20 justify-center items-center">
     <table
-      class="w-3/4 text-3xl text-left border-collapse border-spacing-20 [&_th]:p-1 [&_td]:p-1"
+      class="w-3/4 text-3xl text-left border-collapse border-spacing-20 [&_th]:p-2 [&_td]:p-2"
     >
       <thead class="border-b-2 border-purple">
         <tr>
