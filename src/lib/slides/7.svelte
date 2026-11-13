@@ -1,17 +1,18 @@
 <script lang="ts">
-  const items = ["Infect Packages", "Steal Secrets", "Leak", "Repeat"];
+    const items = ["Infect Packages", "Steal Secrets", "Leak", "Repeat"];
 </script>
 
-<section class="p-8">
-  <h2 class="text-center font-bold leading-tight">Shai-Hulud</h2>
+<section
+    class="pl-20 h-screen w-screen flex gap-x-20 justify-center items-center"
+>
+    <h2 class="text-6xl font-bold leading-tight">Shai-Hulud</h2>
 
-  <div class="mt-50 flex justify-center items-center">
-    <ol class="space-y-8 border-l-2 border-purple pl-12 text-6xl">
-      {#each items as item, i}
-        <li class="flex items-center gap-6">
-          <span class="text-4xl tabular-nums text-purple">0{i}</span>{item}
-        </li>
-      {/each}
+    <ol class="space-y-8 border-l-2 border-purple pl-16 text-4xl">
+        {#each items as item, i}
+            <li class="flex items-baseline gap-6">
+                <span class="w-12 text-2xl tabular-nums text-purple">0{i}</span>
+                {item}
+            </li>
+        {/each}
     </ol>
-  </div>
 </section>
